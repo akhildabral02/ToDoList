@@ -15,17 +15,17 @@ class Application(Frame):
 
         # Second Label for the task Description
         Label(self, text="TASK DESCRIPTION", bg="Light Green", font=("Calibri", 14)).grid(row=0, column=2, columnspan=3,sticky=W)
-        # since we dont need to access these labels anywhere in the progrmas they are just gonna stay there so we are not assigning them to any variable
+        # since we dont need to access these labels anywhere in the programs they are just gonna stay there so we are not assigning them to any variable
 
         # creating Checkbox for the Task completion Status
 
-
         checkvar = IntVar()
-        Checkbutton(text="First Task",variable=checkvar).grid(row=1,column=0, columnspan=2, sticky=W)
+        Checkbutton(text=Entry(),variable=checkvar,font=("Calibri",13)).grid(row=1,column=0, columnspan=2, sticky=W)
+
 
 # Main Programs Begins here
 root = Tk()
 root.title("To Do List Application")
 root.geometry("250x200")
-APP = Application(root)
+app = Application(root)
 root.mainloop()
