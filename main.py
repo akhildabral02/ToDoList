@@ -20,7 +20,7 @@ class Application(Frame):
 
 # Main Programs Begins here
 root = Tk()
-root.title("To Do List")
+root.title("To Do List Application")
 root.geometry("250x200")
 APP = Application(root)
 root.mainloop()
